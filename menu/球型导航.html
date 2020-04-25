@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>球型导航</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        
+        body {
+            background: #34495e;
+        }
+        
+        nav {
+            position: absolute;
+            margin: 0 auto;
+            left: 45%;
+            top: 30%;
+            width: 180px;
+            height: 180px;
+            background: #34495e;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 180px;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 2em;
+            background: #f1c40f;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        nav strong {
+            position: absolute;
+        }
+        
+        nav:hover ul {
+            transform: scale(1.3);
+        }
+        
+        ul {
+            transform: scale(0);
+            border: 150px solid transparent;
+            transition: .5s;
+            cursor: pointer;
+            z-index: -1;
+        }
+        
+        ul li {
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 50px;
+            height: 50px;
+            background: #e67e22;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            line-height: 1.5em;
+            transition: all 1s;
+            transform-origin: 100px 100px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .8);
+        }
+        
+        ul li span {
+            transition: all 1s;
+        }
+        
+        nav:hover ul li:nth-child(1) {
+            transform: rotate(40deg);
+        }
+        
+        nav:hover ul li:nth-child(1) span {
+            transform: rotate(1040deg);
+        }
+        
+        nav:hover ul li:nth-child(2) {
+            transform: rotate(80deg);
+        }
+        
+        nav:hover ul li:nth-child(2) span {
+            transform: rotate(1000deg);
+        }
+        
+        nav:hover ul li:nth-child(3) {
+            transform: rotate(120deg);
+        }
+        
+        nav:hover ul li:nth-child(3) span {
+            transform: rotate(1680deg);
+        }
+        
+        nav:hover ul li:nth-child(4) {
+            transform: rotate(160deg);
+        }
+        
+        nav:hover ul li:nth-child(4) span {
+            transform: rotate(560deg);
+        }
+        
+        nav:hover ul li:nth-child(5) {
+            transform: rotate(200deg);
+        }
+        
+        nav:hover ul li:nth-child(5) span {
+            transform: rotate(520deg);
+        }
+        
+        nav:hover ul li:nth-child(6) {
+            transform: rotate(240deg);
+        }
+        
+        nav:hover ul li:nth-child(6) span {
+            transform: rotate(480deg);
+        }
+        
+        nav:hover ul li:nth-child(7) {
+            transform: rotate(280deg);
+        }
+        
+        nav:hover ul li:nth-child(7) span {
+            transform: rotate(440deg);
+        }
+        
+        nav:hover ul li:nth-child(8) {
+            transform: rotate(320deg);
+        }
+        
+        nav:hover ul li:nth-child(8) span {
+            transform: rotate(400deg);
+        }
+        
+        nav:hover ul li:nth-child(9) {
+            transform: rotate(360deg);
+        }
+        
+        nav:hover ul li:nth-child(9) span {
+            transform: rotate(720deg);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+            <li><span>5</span></li>
+            <li><span>6</span></li>
+            <li><span>7</span></li>
+            <li><span>8</span></li>
+            <li><span>9</span></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
